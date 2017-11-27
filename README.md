@@ -24,7 +24,7 @@ This app includes all functionality of alarm clock and include nighttime light. 
 
 
 **Design**
-![UI](http:///https://github.com/Bekaryss/NTAC/NTAC.jpg "NTAC")
+![UI](https://github.com/Bekaryss/NTAC/blob/master/NTAC.jpg "NTAC")
 
 **Model**
-![Models](http:///https://github.com/Bekaryss/NTAC/models.jpg "Models")
+![Models](https://github.com/Bekaryss/NTAC/blob/master/models.jpg "Models")
