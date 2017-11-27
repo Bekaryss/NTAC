@@ -22,3 +22,9 @@ This app includes all functionality of alarm clock and include nighttime light. 
 
 15 weeks: Presentation and fix bug, if it exists
 
+
+**Design**
+![UI](http:///https://github.com/Bekaryss/NTAC/NTAC.jpg "NTAC")
+
+**Model**
+![Models](http:///https://github.com/Bekaryss/NTAC/models.jpg "Models")

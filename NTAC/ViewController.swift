@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  NTAC
 //
-//  Created by Saulebekov Azamat on 29.10.17.
-//  Copyright © 2017 Hell. All rights reserved.
+//  Created by user on 20.11.17.
+//  Copyright © 2017 Dante. All rights reserved.
 //
 
 import UIKit

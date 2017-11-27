@@ -3,80 +3,185 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03C4AF161FA5F88A00D3F479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4AF151FA5F88A00D3F479 /* AppDelegate.swift */; };
-		03C4AF181FA5F88A00D3F479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4AF171FA5F88A00D3F479 /* ViewController.swift */; };
-		03C4AF1B1FA5F88A00D3F479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF191FA5F88A00D3F479 /* Main.storyboard */; };
-		03C4AF1E1FA5F88A00D3F479 /* NTAC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03C4AF1C1FA5F88A00D3F479 /* NTAC.xcdatamodeld */; };
-		03C4AF201FA5F88A00D3F479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF1F1FA5F88A00D3F479 /* Assets.xcassets */; };
-		03C4AF231FA5F88A00D3F479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF211FA5F88A00D3F479 /* LaunchScreen.storyboard */; };
+		593595241FCB255A00D055CA /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 593595231FCB255A00D055CA /* alarm.mp3 */; };
+		593595261FCB28F700D055CA /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593595251FCB28F700D055CA /* TimerViewController.swift */; };
+		5935952A1FCB404F00D055CA /* NightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593595291FCB404F00D055CA /* NightViewController.swift */; };
+		5935952C1FCB543700D055CA /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5935952B1FCB543700D055CA /* giphy.gif */; };
+		5A03BD13AFE243C3BD58BF26 /* Pods_NTAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B47D4644D67636B53E0C1D4 /* Pods_NTAC.framework */; };
+		67CB16F51FC87BD4007D100B /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CB16F41FC87BD4007D100B /* Scheduler.swift */; };
+		67CB16F81FC883CB007D100B /* AlarmSchedulerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CB16F71FC883CB007D100B /* AlarmSchedulerDelegate.swift */; };
+		CE06FA0E1FC53BCB00F57C41 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE06FA0D1FC53BCB00F57C41 /* bell.mp3 */; };
+		CE0B0C0A1FC279AC00290B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B0C091FC279AC00290B61 /* AppDelegate.swift */; };
+		CE0B0C0C1FC279AC00290B61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B0C0B1FC279AC00290B61 /* ViewController.swift */; };
+		CE0B0C0F1FC279AC00290B61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0B0C0D1FC279AC00290B61 /* Main.storyboard */; };
+		CE0B0C111FC279AC00290B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0B0C101FC279AC00290B61 /* Assets.xcassets */; };
+		CE0B0C141FC279AC00290B61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0B0C121FC279AC00290B61 /* LaunchScreen.storyboard */; };
+		CE0B0C1C1FC27A5600290B61 /* AlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B0C1B1FC27A5600290B61 /* AlarmTableViewController.swift */; };
+		CE0B0C1E1FC27A9900290B61 /* AlarmSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B0C1D1FC27A9900290B61 /* AlarmSchedulingViewController.swift */; };
+		CE0B0C211FC27F3500290B61 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B0C201FC27F3500290B61 /* AlarmItem.swift */; };
+		CE0B0C231FC27FD800290B61 /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B0C221FC27FD800290B61 /* AlarmList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03C4AF121FA5F88A00D3F479 /* NTAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03C4AF151FA5F88A00D3F479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03C4AF171FA5F88A00D3F479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03C4AF1A1FA5F88A00D3F479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03C4AF1D1FA5F88A00D3F479 /* NTAC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NTAC.xcdatamodel; sourceTree = "<group>"; };
-		03C4AF1F1FA5F88A00D3F479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03C4AF221FA5F88A00D3F479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		03C4AF241FA5F88A00D3F479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B47D4644D67636B53E0C1D4 /* Pods_NTAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		593595231FCB255A00D055CA /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		593595251FCB28F700D055CA /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		593595291FCB404F00D055CA /* NightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightViewController.swift; sourceTree = "<group>"; };
+		5935952B1FCB543700D055CA /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		67CB16F41FC87BD4007D100B /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		67CB16F71FC883CB007D100B /* AlarmSchedulerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSchedulerDelegate.swift; sourceTree = "<group>"; };
+		AD91338751460224C6127C95 /* Pods-NTAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-NTAC/Pods-NTAC.release.xcconfig"; sourceTree = "<group>"; };
+		C3183818521D3A258475204A /* Pods-NTAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NTAC/Pods-NTAC.debug.xcconfig"; sourceTree = "<group>"; };
+		CE06FA0D1FC53BCB00F57C41 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		CE0B0C061FC279AC00290B61 /* NTAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0B0C091FC279AC00290B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE0B0C0B1FC279AC00290B61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE0B0C0E1FC279AC00290B61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE0B0C101FC279AC00290B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0B0C131FC279AC00290B61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0B0C151FC279AC00290B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0B0C1B1FC27A5600290B61 /* AlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewController.swift; sourceTree = "<group>"; };
+		CE0B0C1D1FC27A9900290B61 /* AlarmSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSchedulingViewController.swift; sourceTree = "<group>"; };
+		CE0B0C201FC27F3500290B61 /* AlarmItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
+		CE0B0C221FC27FD800290B61 /* AlarmList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03C4AF0F1FA5F88A00D3F479 /* Frameworks */ = {
+		CE0B0C031FC279AC00290B61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A03BD13AFE243C3BD58BF26 /* Pods_NTAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C4AF091FA5F88900D3F479 = {
+		67CB16F01FC87B30007D100B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				03C4AF141FA5F88A00D3F479 /* NTAC */,
-				03C4AF131FA5F88A00D3F479 /* Products */,
+				CE0B0C0D1FC279AC00290B61 /* Main.storyboard */,
+				CE0B0C121FC279AC00290B61 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		67CB16F11FC87B47007D100B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B0C1F1FC27F0700290B61 /* Models */,
+				CE0B0C0B1FC279AC00290B61 /* ViewController.swift */,
+				CE0B0C1B1FC27A5600290B61 /* AlarmTableViewController.swift */,
+				CE0B0C1D1FC27A9900290B61 /* AlarmSchedulingViewController.swift */,
+				593595251FCB28F700D055CA /* TimerViewController.swift */,
+				593595291FCB404F00D055CA /* NightViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		67CB16F21FC87B81007D100B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B0C091FC279AC00290B61 /* AppDelegate.swift */,
+				67CB16F41FC87BD4007D100B /* Scheduler.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		67CB16F31FC87BA5007D100B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				593595231FCB255A00D055CA /* alarm.mp3 */,
+				CE0B0C151FC279AC00290B61 /* Info.plist */,
+				CE06FA0D1FC53BCB00F57C41 /* bell.mp3 */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67CB16F61FC88343007D100B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				67CB16F71FC883CB007D100B /* AlarmSchedulerDelegate.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		847B41C9C935A2624ED74203 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3183818521D3A258475204A /* Pods-NTAC.debug.xcconfig */,
+				AD91338751460224C6127C95 /* Pods-NTAC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92256E12C3B1AB6592EDED2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B47D4644D67636B53E0C1D4 /* Pods_NTAC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0B0BFD1FC279AC00290B61 = {
+			isa = PBXGroup;
+			children = (
+				CE0B0C081FC279AC00290B61 /* NTAC */,
+				CE0B0C071FC279AC00290B61 /* Products */,
+				847B41C9C935A2624ED74203 /* Pods */,
+				92256E12C3B1AB6592EDED2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		03C4AF131FA5F88A00D3F479 /* Products */ = {
+		CE0B0C071FC279AC00290B61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03C4AF121FA5F88A00D3F479 /* NTAC.app */,
+				CE0B0C061FC279AC00290B61 /* NTAC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		03C4AF141FA5F88A00D3F479 /* NTAC */ = {
+		CE0B0C081FC279AC00290B61 /* NTAC */ = {
 			isa = PBXGroup;
 			children = (
-				03C4AF151FA5F88A00D3F479 /* AppDelegate.swift */,
-				03C4AF171FA5F88A00D3F479 /* ViewController.swift */,
-				03C4AF191FA5F88A00D3F479 /* Main.storyboard */,
-				03C4AF1F1FA5F88A00D3F479 /* Assets.xcassets */,
-				03C4AF211FA5F88A00D3F479 /* LaunchScreen.storyboard */,
-				03C4AF241FA5F88A00D3F479 /* Info.plist */,
-				03C4AF1C1FA5F88A00D3F479 /* NTAC.xcdatamodeld */,
+				67CB16F61FC88343007D100B /* Protocol */,
+				67CB16F31FC87BA5007D100B /* Supporting Files */,
+				67CB16F21FC87B81007D100B /* App */,
+				67CB16F11FC87B47007D100B /* Controller */,
+				67CB16F01FC87B30007D100B /* View */,
+				CE0B0C101FC279AC00290B61 /* Assets.xcassets */,
+				5935952B1FCB543700D055CA /* giphy.gif */,
 			);
 			path = NTAC;
+			sourceTree = "<group>";
+		};
+		CE0B0C1F1FC27F0700290B61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B0C201FC27F3500290B61 /* AlarmItem.swift */,
+				CE0B0C221FC27FD800290B61 /* AlarmList.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03C4AF111FA5F88A00D3F479 /* NTAC */ = {
+		CE0B0C051FC279AC00290B61 /* NTAC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03C4AF271FA5F88A00D3F479 /* Build configuration list for PBXNativeTarget "NTAC" */;
+			buildConfigurationList = CE0B0C181FC279AC00290B61 /* Build configuration list for PBXNativeTarget "NTAC" */;
 			buildPhases = (
-				03C4AF0E1FA5F88A00D3F479 /* Sources */,
-				03C4AF0F1FA5F88A00D3F479 /* Frameworks */,
-				03C4AF101FA5F88A00D3F479 /* Resources */,
+				E4935DBC082337A4136DBCF7 /* [CP] Check Pods Manifest.lock */,
+				CE0B0C021FC279AC00290B61 /* Sources */,
+				CE0B0C031FC279AC00290B61 /* Frameworks */,
+				CE0B0C041FC279AC00290B61 /* Resources */,
+				123985D19551BDE53B1096B1 /* [CP] Embed Pods Frameworks */,
+				52005C86BF60789D282D0AD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,82 +189,146 @@
 			);
 			name = NTAC;
 			productName = NTAC;
-			productReference = 03C4AF121FA5F88A00D3F479 /* NTAC.app */;
+			productReference = CE0B0C061FC279AC00290B61 /* NTAC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		03C4AF0A1FA5F88900D3F479 /* Project object */ = {
+		CE0B0BFE1FC279AC00290B61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = Hell;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Dante;
 				TargetAttributes = {
-					03C4AF111FA5F88A00D3F479 = {
-						CreatedOnToolsVersion = 9.0.1;
+					CE0B0C051FC279AC00290B61 = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 03C4AF0D1FA5F88900D3F479 /* Build configuration list for PBXProject "NTAC" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			buildConfigurationList = CE0B0C011FC279AC00290B61 /* Build configuration list for PBXProject "NTAC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 03C4AF091FA5F88900D3F479;
-			productRefGroup = 03C4AF131FA5F88A00D3F479 /* Products */;
+			mainGroup = CE0B0BFD1FC279AC00290B61;
+			productRefGroup = CE0B0C071FC279AC00290B61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03C4AF111FA5F88A00D3F479 /* NTAC */,
+				CE0B0C051FC279AC00290B61 /* NTAC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03C4AF101FA5F88A00D3F479 /* Resources */ = {
+		CE0B0C041FC279AC00290B61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C4AF231FA5F88A00D3F479 /* LaunchScreen.storyboard in Resources */,
-				03C4AF201FA5F88A00D3F479 /* Assets.xcassets in Resources */,
-				03C4AF1B1FA5F88A00D3F479 /* Main.storyboard in Resources */,
+				CE0B0C141FC279AC00290B61 /* LaunchScreen.storyboard in Resources */,
+				CE06FA0E1FC53BCB00F57C41 /* bell.mp3 in Resources */,
+				CE0B0C111FC279AC00290B61 /* Assets.xcassets in Resources */,
+				CE0B0C0F1FC279AC00290B61 /* Main.storyboard in Resources */,
+				5935952C1FCB543700D055CA /* giphy.gif in Resources */,
+				593595241FCB255A00D055CA /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		123985D19551BDE53B1096B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NTAC/Pods-NTAC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTAC/Pods-NTAC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52005C86BF60789D282D0AD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTAC/Pods-NTAC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4935DBC082337A4136DBCF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTAC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		03C4AF0E1FA5F88A00D3F479 /* Sources */ = {
+		CE0B0C021FC279AC00290B61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C4AF181FA5F88A00D3F479 /* ViewController.swift in Sources */,
-				03C4AF161FA5F88A00D3F479 /* AppDelegate.swift in Sources */,
-				03C4AF1E1FA5F88A00D3F479 /* NTAC.xcdatamodeld in Sources */,
+				CE0B0C211FC27F3500290B61 /* AlarmItem.swift in Sources */,
+				593595261FCB28F700D055CA /* TimerViewController.swift in Sources */,
+				67CB16F51FC87BD4007D100B /* Scheduler.swift in Sources */,
+				5935952A1FCB404F00D055CA /* NightViewController.swift in Sources */,
+				CE0B0C231FC27FD800290B61 /* AlarmList.swift in Sources */,
+				CE0B0C1E1FC27A9900290B61 /* AlarmSchedulingViewController.swift in Sources */,
+				CE0B0C0C1FC279AC00290B61 /* ViewController.swift in Sources */,
+				CE0B0C1C1FC27A5600290B61 /* AlarmTableViewController.swift in Sources */,
+				67CB16F81FC883CB007D100B /* AlarmSchedulerDelegate.swift in Sources */,
+				CE0B0C0A1FC279AC00290B61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03C4AF191FA5F88A00D3F479 /* Main.storyboard */ = {
+		CE0B0C0D1FC279AC00290B61 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03C4AF1A1FA5F88A00D3F479 /* Base */,
+				CE0B0C0E1FC279AC00290B61 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		03C4AF211FA5F88A00D3F479 /* LaunchScreen.storyboard */ = {
+		CE0B0C121FC279AC00290B61 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03C4AF221FA5F88A00D3F479 /* Base */,
+				CE0B0C131FC279AC00290B61 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,19 +336,17 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		03C4AF251FA5F88A00D3F479 /* Debug */ = {
+		CE0B0C161FC279AC00290B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -187,21 +354,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -215,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -224,19 +386,17 @@
 			};
 			name = Debug;
 		};
-		03C4AF261FA5F88A00D3F479 /* Release */ = {
+		CE0B0C171FC279AC00290B61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -244,21 +404,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -266,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -274,69 +429,56 @@
 			};
 			name = Release;
 		};
-		03C4AF281FA5F88A00D3F479 /* Debug */ = {
+		CE0B0C191FC279AC00290B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3183818521D3A258475204A /* Pods-NTAC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NTAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NTAC;
+				PRODUCT_BUNDLE_IDENTIFIER = Dante.NTAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		03C4AF291FA5F88A00D3F479 /* Release */ = {
+		CE0B0C1A1FC279AC00290B61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD91338751460224C6127C95 /* Pods-NTAC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NTAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NTAC;
+				PRODUCT_BUNDLE_IDENTIFIER = Dante.NTAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03C4AF0D1FA5F88900D3F479 /* Build configuration list for PBXProject "NTAC" */ = {
+		CE0B0C011FC279AC00290B61 /* Build configuration list for PBXProject "NTAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03C4AF251FA5F88A00D3F479 /* Debug */,
-				03C4AF261FA5F88A00D3F479 /* Release */,
+				CE0B0C161FC279AC00290B61 /* Debug */,
+				CE0B0C171FC279AC00290B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03C4AF271FA5F88A00D3F479 /* Build configuration list for PBXNativeTarget "NTAC" */ = {
+		CE0B0C181FC279AC00290B61 /* Build configuration list for PBXNativeTarget "NTAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03C4AF281FA5F88A00D3F479 /* Debug */,
-				03C4AF291FA5F88A00D3F479 /* Release */,
+				CE0B0C191FC279AC00290B61 /* Debug */,
+				CE0B0C1A1FC279AC00290B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		03C4AF1C1FA5F88A00D3F479 /* NTAC.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				03C4AF1D1FA5F88A00D3F479 /* NTAC.xcdatamodel */,
-			);
-			currentVersion = 03C4AF1D1FA5F88A00D3F479 /* NTAC.xcdatamodel */;
-			path = NTAC.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 03C4AF0A1FA5F88900D3F479 /* Project object */;
+	rootObject = CE0B0BFE1FC279AC00290B61 /* Project object */;
 }

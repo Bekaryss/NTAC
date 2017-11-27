@@ -2,22 +2,106 @@
 //  AppDelegate.swift
 //  NTAC
 //
-//  Created by Saulebekov Azamat on 29.10.17.
-//  Copyright © 2017 Hell. All rights reserved.
+//  Created by user on 20.11.17.
+//  Copyright © 2017 Dante. All rights reserved.
 //
 
 import UIKit
-import CoreData
+import AudioToolbox
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    var audioPlayer: AVAudioPlayer?
+    let alarmScheduler: AlarmSchedulerDelegate = Scheduler()
+    var alarms: [AlarmItem] = []
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         return true
+    }
+    
+    func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
+        
+        let item = AlarmItem(date: notification.fireDate!, title: notification.userInfo!["title"] as! String, UUID: notification.userInfo!["UUID"] as! String!, enabled: notification.userInfo!["enabled"] as! Bool)
+        switch (identifier!) {
+        case "Snooze":
+            alarmScheduler.scheduleReminder(forItem: item)
+        default: // switch statements must be exhaustive - this condition should never be met
+            print("Error: unexpected notification action identifier!")
+        }
+        completionHandler() // per developer documentation, app will terminate if we fail to call this
+    }
+    
+    func playSound() {
+        
+        //vibrate phone first
+        AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+        //set vibrate callback
+        AudioServicesAddSystemSoundCompletion(SystemSoundID(kSystemSoundID_Vibrate),nil, nil,
+        {
+            (_:SystemSoundID, _:UnsafeMutableRawPointer?) -> Void in
+            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }, nil)
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "alarm", ofType: "mp3")!)
+        
+        var error: NSError?
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+        } catch let error1 as NSError {
+            error = error1
+            audioPlayer = nil
+        }
+        
+        if let err = error {
+            print("audioPlayer error \(err.localizedDescription)")
+            return
+        } else {
+            audioPlayer!.prepareToPlay()
+        }
+        
+        //negative number means loop infinity
+        audioPlayer!.numberOfLoops = -1
+        audioPlayer!.play()
+    }
+    
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+        var uuid: String = ""
+        if let userInfo = notification.userInfo {
+                uuid = userInfo["UUID"] as! String
+        }
+        playSound()
+        let storageController = UIAlertController(title: "Alarm", message: nil, preferredStyle: .alert)
+        let stopOption = UIAlertAction(title: "OK", style: .default) {
+            (action:UIAlertAction)->Void in self.audioPlayer?.stop()
+            AudioServicesRemoveSystemSoundCompletion(kSystemSoundID_Vibrate)
+            self.alarms = AlarmList.sharedInstance.allItems()
+            for i in 0..<self.alarms.count{
+                if(self.alarms[i].UUID == uuid){
+                    self.alarms[i].enabled = false
+                    AlarmList.sharedInstance.changeItem(self.alarms[i])
+                    self.alarmScheduler.removeNotification(self.alarms[i])
+                }
+            }
+            
+        }
+        storageController.addAction(stopOption)
+        window?.rootViewController?.present(storageController, animated: true, completion: nil)
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+
+    }
+    
+    //AVAudioPlayerDelegate protocol
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        
+    }
+    
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -34,60 +118,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
     }
 
-    // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "NTAC")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-
-    // MARK: - Core Data Saving support
-
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
-    }
 
 }
 
