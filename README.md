@@ -7,6 +7,7 @@ Nighttime Alarm clock - alarm clock and night light for IOS (SWIFT)
 This app includes all functionality of alarm clock and include nighttime light. Some people cannot sleep in dark room. Furthermore, with relaxing music sleeping is more comfortable.
 
 Simple Alarm clock for IOS on SWIFT
+
 **Plan:**
 
 9 weeks: Writing description, and make beta design and uml diagram
